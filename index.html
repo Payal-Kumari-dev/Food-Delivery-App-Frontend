@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food App</title>
+
+    <!-- Css -->
+     <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JavaScript -->
+    <script type="module" src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="wrapper">
+        <section class="mobile-banner banner">
+            <div class="banner-content">
+                <p class="banner-content__description">Order Restaurant food, takeaway and groceries.</p>
+                <h2 class="banner-content__heading">Feast Your Senses, <em>Fast and Fresh</em></h2>
+                <form action="" class="banner-content__form">
+                    <p class="banner-content__form-description">Enter a postcode to see what we deliver</p>
+                    <div class="banner-content__form-item form-item">
+                        <label for="usermail" class="visually-hidden">Email</label>
+                        <input type="text" name="usermail" id="usermail" placeholder="e.g. EC4R 3TE" required>
+                        <button type="submit">&gt;</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="desktop-banner banner">
+            <div class="banner-content">
+                <p class="banner-content__description">Order Restaurant food, takeaway and groceries.</p>
+                <h2 class="banner-content__heading">Feast Your Senses, <em>Fast and Fresh</em></h2>
+                <form action="" class="banner-content__form">
+                    <p class="banner-content__form-description">Enter a postcode to see what we deliver</p>
+                    <div class="banner-content__form-item form-item">
+                        <label for="usermail" class="visually-hidden">Email</label>
+                        <input type="text" name="usermail" id="usermail" placeholder="e.g. EC4R 3TE" required>
+                        <button type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="banner-image banner-image-1">
+                <img src="./src/assests/girl-eating-pizza.png" alt="girl eating pizza">
+            </div>
+            <div class="banner-image banner-image-2">
+                <img src="./src/assests/girl-wating-noodels.png" alt="girl eating noodles">
+            </div>
+            <div class="banner-testimonials">
+                <article class="banner-testimonial">
+                    <h3 class="banner-testimonial__heading">1</h3>
+                    <div class="banner-testimonial__card">
+                        <div class="banner-testimonial__header">
+                            <div class="banner-testimonial__header-left">
+                                <img src="./src/assests/logo.png" alt="logo">
+                            </div>
+                            <p class="banner-testimonial__header-right">now</p>
+                        </div>
+                        <div class="banner-testimonial__description">
+                            <p>We've Received your order!</p>
+                            <p>Awaiting Restaurant acceptance</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="banner-testimonial">
+                    <h3 class="banner-testimonial__heading">2</h3>
+                    <div class="banner-testimonial__card">
+                        <div class="banner-testimonial__header">
+                            <div class="banner-testimonial__header-left">
+                                <img src="./src/assests/logo.png" alt="logo">
+                            </div>
+                            <p class="banner-testimonial__header-right">now</p>
+                        </div>
+                        <div class="banner-testimonial__description">
+                            <p>Order Accepted! ✅</p>
+                            <p>Your order will be delivered shortly</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="banner-testimonial">
+                    <h3 class="banner-testimonial__heading">3</h3>
+                    <div class="banner-testimonial__card">
+                        <div class="banner-testimonial__header">
+                            <div class="banner-testimonial__header-left">
+                                <img src="./src/assests/logo.png" alt="logo">
+                            </div>
+                            <p class="banner-testimonial__header-right">now</p>
+                        </div>
+                        <div class="banner-testimonial__description">
+                            <p>Your rider's nearby 🎉</p>
+                            <p>They're almost there - get ready!</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="testimonials-background"></div>
+        </section>
+    </div>
+    <main>
+        <section class="discount-offers wrapper">
+            <div class="discount-offers__header">
+                <h2 class="heading discount-offers__header-heading">
+                    <span>Up to -40% Discount Offers🎊</span>
+                </h2>
+                <div class="discount-offers__category-wrapper mobile-category">
+                    <select class="discount-offers__category" name="discount-offers__category" id="discount-offers__category">
+                        <option value="vegan">Vegan</option>
+                        <option value="sushi">Sushi</option>
+                        <option value="pizza&fast" selected>Pizza & Fast food</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <label for="discount-offers__category">
+                        <i class="fa fa-chevron-down"></i>
+                    </label>
+                </div>
+                <div class="discount-offers__category-wrapper desktop-category">
+                    <ul class="discount-offers__categories-list">
+                        <li class="discount-offers__categories-list-item">
+                            <button type="button">Vegan</button>
+                        </li>
+                        <li class="discount-offers__categories-list-item">
+                            <button type="button">Sushi</button>
+                        </li>
+                        <li class="discount-offers__categories-list-item">
+                            <button type="button" autofocus>Pizza & Fast food</button>
+                        </li>
+                        <li class="discount-offers__categories-list-item">
+                            <button type="button">Others</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="discount-offers-cards">
+                <div class="discount-card__wrapper">
+                    <figure class="discount-card">
+                        <div class="discount-card__image-wrapper">
+                            <img src="./src/assests/Home Page/burgers.png" alt="burger" class="discount-card__image">
+                        </div>
+                        <figcaption class="discount-card__description">
+                            <p>Restaurant</p>
+                            <p>Butterbrot Caf'e London</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="discount-card__wrapper">
+                    <figure class="discount-card">
+                        <div class="discount-card__image-wrapper">
+                            <img src="./src/assests/Home Page/Salad.png" alt="burger" class="discount-card__image">
+                        </div>
+                        <figcaption class="discount-card__description">
+                            <p>Restaurant</p>
+                            <p>Grand Caf'e</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="discount-card__wrapper">
+                    <figure class="discount-card">
+                        <div class="discount-card__image-wrapper">
+                            <img src="./src/assests/Home Page/burgers.png" alt="burger" class="discount-card__image">
+                        </div>
+                        <figcaption class="discount-card__description">
+                            <p>Restaurant</p>
+                            <p>Butterbrot Caf'e London</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="popular-categories wrapper">
+            <h2 class="heading popular-categories__heading">Order.Uk's Popular Categories 🤩</h2>
+            <div class="popular-categories__cards">
+                <div class="popular-categories__card">
+                    <figure class="popular-categories__card-content-wrapper">
+                        <div class="popular-categories__card-image-container">
+                            <img src="./src/assests/popular Categories/item-1.png" alt="item-1">
+                        </div>
+                        <figcaption class="popular-categories__card-description">
+                            <p>Burgers & Fast food</p>
+                            <p>21 Restaurants</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="popular-categories__card">
+                    <figure class="popular-categories__card-content-wrapper">
+                        <div class="popular-categories__card-image-container">
+                            <img src="./src/assests/popular Categories/item-2.png" alt="item-2">
+                        </div>
+                        <figcaption class="popular-categories__card-description">
+                            <p>Salads</p>
+                            <p>32 Restaurants</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="popular-categories__card">
+                    <figure class="popular-categories__card-content-wrapper">
+                        <div class="popular-categories__card-image-container">
+                            <img src="./src/assests/popular Categories/item-3.png" alt="item-3">
+                        </div>
+                        <figcaption class="popular-categories__card-description">
+                            <p>Pasta & Casuals</p>
+                            <p>4 Restaurants</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="popular-categories__card">
+                    <figure class="popular-categories__card-content-wrapper">
+                        <div class="popular-categories__card-image-container">
+                            <img src="./src/assests/popular Categories/item-4.png" alt="item-4">
+                        </div>
+                        <figcaption class="popular-categories__card-description">
+                            <p>Pizza</p>
+                            <p>32 Restaurants</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="popular-categories__card">
+                    <figure class="popular-categories__card-content-wrapper">
+                        <div class="popular-categories__card-image-container">
+                            <img src="./src/assests/popular Categories/item-5.png" alt="item-5">
+                        </div>
+                        <figcaption class="popular-categories__card-description">
+                            <p>Breakfast</p>
+                            <p>4 Restaurants</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="popular-categories__card">
+                    <figure class="popular-categories__card-content-wrapper">
+                        <div class="popular-categories__card-image-container">
+                            <img src="./src/assests/popular Categories/item-6.png" alt="item-6">
+                        </div>
+                        <figcaption class="popular-categories__card-description">
+                            <p>Soups</p>
+                            <p>32 Restaurants</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="popular-restaurants wrapper">
+            <h2 class="heading popular-restaurants__heading">Popular Restaurants</h2>
+            <div class="popular-restaurants--cards">
+                <a href="" class="popular-restaurants--card">
+                    <div>
+                        <img src="./src/assests/Restaurants/restaurants-1.png" alt="restaurant-1">
+                    </div>
+                    <span>McDonald's London</span>
+                </a>
+                <a href="" class="popular-restaurants--card">
+                    <div><img src="./src/assests/Restaurants/restaurants-2.png" alt="restaurant-2"></div>
+                    <span>Papa Johns</span>
+                </a>
+                <a href="" class="popular-restaurants--card">
+                    <div><img src="./src/assests/Restaurants/restaurants-3.png" alt="restaurant-3"></div>
+                    <span>KFC West London</span>
+                </a>
+                <a href="" class="popular-restaurants--card">
+                    <div><img src="./src/assests/Restaurants/restaurants-4.png" alt="restaurant-4"></div>
+                    <span>Texas Chicken</span>
+                </a>
+                <a href="" class="popular-restaurants--card">
+                    <div><img src="./src/assests/Restaurants/restaurants-5.png" alt="restaurant-5"></div>
+                    <span>Burger King</span>
+                </a>
+                <a href="" class="popular-restaurants--card">
+                    <div><img src="./src/assests/Restaurants/restaurants-6.png" alt="restaurant-6"></div>
+                    <span>Shaurma 1</span>
+                </a>
+            </div>
+        </section>
+        <div class="banners wrapper">
+            <div class="small-banners">
+                <div class="small-banner">
+                    <div class="small-banner-content">
+                        <p>Signup as a business</p>
+                        <h2>Partner with us</h2>
+                        <button type="button">Get Started</button>
+                    </div>
+                    <div class="small-banner-image-wrapper">
+                        <img src="./src/assests/banners/small-banner-1.png" alt="banner-1">
+                        <div class="background-gradient"></div>
+                    </div>
+                </div>
+                <div class="small-banner">
+                    <div class="small-banner-content">
+                        <p>Signup as a rider</p>
+                        <h2>Ride with us</h2>
+                        <button type="button">Get Started</button>
+                    </div>
+                    <div class="small-banner-image-wrapper">
+                        <img src="./src/assests/banners/small-banner-2.png" alt="banner-2">
+                        <div class="background-gradient"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="faqs-wrapper wrapper">
+            <h2 class="heading faqs--heading">Know more about us!</h2>
+            <div class="faqs--container">
+                <p class="faq">
+                    <a href="">
+                        <button type="button" class="faq--buttton">How does Order.UK work?</button>
+                    </a>
+                </p>
+                <p class="faq">What payment methods are accepted?</p>
+                <p class="faq">Can I track my order in real-time?</p>
+                <p class="faq">Are there any special discounts or promotions available?</p>
+                <p class="faq">Is Order.UK available in my area?</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <section class="footer-main-content">
+          <h2>
+              <img src="../src/assests/order-logo.png" alt="logo" class="footer-logo">
+          </h2>
+          <div>
+              <img src="../src/assests/apps.svg" alt="apps">
+          </div>
+          <address>
+              Company # 490039-445, Registered with House of companies.
+          </address>
+      </section>
+          <div class="footer-email-content">
+              <p class="footer-email-content-heading footer-x-content-heading">Get Exclusive Deals in your Inbox</p>
+              <form action="" class="footer-form">
+                  <div class="form-item">
+                      <label for="gmail" class="visually-hidden">Email</label>
+                      <input type="email" name="gmail" id="gmail" placeholder="youremail@gmail.com">
+                  </div>
+                  <button type="submit">Subscribe</button>
+                  <p class="footer-email-policy form-wrapper-signup-text">we wont spam, read our <a href="">email policy</a></p>
+              </form>
+              <div class="social-links">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                  <a href=""><i class="fa-brands fa-snapchat"></i></a>
+              </div>
+          </div>
+          <div class="footer-links-content">
+              <p class="footer-x-content-heading">Legal Pages</p>
+              <div class="footer-links-wrapper">
+                  <a href="">Terms and conditions</a>
+                  <a href="">Privacy</a>
+                  <a href="">Cookies</a>
+                  <a href="">Modern Slavery Statement</a>
+              </div>
+          </div>
+          <div class="footer-links-content">
+              <p class="footer-x-content-heading">Important Links</p>
+              <div class="footer-links-wrapper">
+                  <a href="">Get help</a>
+                  <a href="">Add your restaurant</a>
+                  <a href="">Sign up to deliver</a>
+                  <a href="">Create a business account</a>
+              </div>
+          </div>
+          <div class="footer-bottom-banner">
+              <p>Order.uk Copyright 2024, All Rights Reserved.</p>
+          </div>
+    </footer>
+    </div>
+  </body>
+</html>

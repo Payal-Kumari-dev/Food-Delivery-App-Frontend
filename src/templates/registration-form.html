@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JavaScript -->
+     <script src="../main.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <main class="form-group">
+            <article class="form-wrapper">
+                <h2 class="form-wrapper-heading">
+                    <figure class="form-wrapper-image-container">
+                        <img src="../assests/order-logo.png" alt="logo" class="app-logo">
+                        <figcaption class="visually-hidden">Logo</figcaption>
+                    </figure>
+                </h2>
+                <div class="form-wrapper-content">
+                    <p>Welcome Back 👋</p>
+                    <p>Today is a new day. It's your day. You shape it.<br>
+                    Sign in to start ordering.</p>
+                </div>
+                <form method="post" class="form-wrapper-form" id="registration-form">
+                    <div class="form-item">
+                        <label for="username">Name</label>
+                        <input type="text" name="username" id="username" placeholder="eg. John A">
+                    </div>
+                    <div class="form-item">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="Enter 10 digit phone number">
+                    </div>
+                    <div class="form-item">
+                        <label for="userEmail">Email</label>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="youremail@gmail.com">
+                    </div>
+                    <div class="form-item">
+                        <label for="userPassword">Password</label>
+                        <input type="password" name="userPassword" id="userPassword" placeholder="At least 8 characters">
+                    </div>
+                    <button type="submit" class="button">Sign In</button>
+                </form>
+                <p class="form-wrapper-signup-text">Already have an account? <a href="">Sign In</a></p>
+            </article>
+            <figure class="form-banner">
+                <img src="../assests/burger-banner.png" alt="burger-banner">
+                <figcaption class="visually-hidden">Burgers</figcaption>
+            </figure>
+        </main>
+        <footer>
+            <section class="footer-main-content">
+                <h2>
+                    <img src="../assests/order-logo.png" alt="logo" class="footer-logo">
+                </h2>
+                <div>
+                    <img src="../assests/apps.svg" alt="apps">
+                </div>
+                <address>
+                    Company # 490039-445, Registered with House of companies.
+                </address>
+            </section>
+                <div class="footer-email-content">
+                    <p class="footer-email-content-heading footer-x-content-heading">Get Exclusive Deals in your Inbox</p>
+                    <form action="" class="footer-form">
+                        <div class="form-item">
+                            <label for="gmail" class="visually-hidden">Email</label>
+                            <input type="email" name="gmail" id="gmail" placeholder="youremail@gmail.com">
+                        </div>
+                        <button type="submit">Subscribe</button>
+                        <p class="footer-email-policy form-wrapper-signup-text">we wont spam, read our <a href="">email policy</a></p>
+                    </form>
+                    <div class="social-links">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-content">
+                    <p class="footer-x-content-heading">Legal Pages</p>
+                    <div class="footer-links-wrapper">
+                        <a href="">Terms and conditions</a>
+                        <a href="">Privacy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Modern Slavery Statement</a>
+                    </div>
+                </div>
+                <div class="footer-links-content">
+                    <p class="footer-x-content-heading">Important Links</p>
+                    <div class="footer-links-wrapper">
+                        <a href="">Get help</a>
+                        <a href="">Add your restaurant</a>
+                        <a href="">Sign up to deliver</a>
+                        <a href="">Create a business account</a>
+                    </div>
+                </div>
+                <div class="footer-bottom-banner">
+                    <p>Order.uk Copyright 2024, All Rights Reserved.</p>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>
